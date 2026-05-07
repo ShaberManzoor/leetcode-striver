@@ -25,7 +25,6 @@ public class LongestSubarrayZeroSum {
     }
 
     public static int LongestSubsetWithZeroSum(List<Integer> numbers) {
-
         int maxLength = 0;
         int prefixSum = 0;
 
