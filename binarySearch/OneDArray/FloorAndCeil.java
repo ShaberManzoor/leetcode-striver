@@ -9,11 +9,11 @@ public class FloorAndCeil {
         System.out.println("Floor-" + floorVal);
         System.out.println("Ceil-" + ceilVal);
     }
-    
+
     //this is done using lower bound
     static int findFloor(int arr[], int x){
         int low = 0, high = arr.length-1, ans = -1;
-        while(low<high){
+        while(low<=high){
             int mid = low + (high - low)/2;
             if(arr[mid]<=x){
                 ans = mid;
@@ -29,7 +29,7 @@ public class FloorAndCeil {
     //done using upper bound
     static int findCeil(int arr[], int x){
         int low = 0, high = arr.length-1, ans = -1;
-        while(low<high){
+        while(low<=high){
             int mid = low + (high - low)/2;
             if(arr[mid]>=x){
                 ans = mid;
