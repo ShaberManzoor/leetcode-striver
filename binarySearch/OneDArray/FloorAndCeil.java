@@ -23,7 +23,7 @@ public class FloorAndCeil {
             }
         }
 
-        return low;
+        return ans;
     }
 
     //done using upper bound
