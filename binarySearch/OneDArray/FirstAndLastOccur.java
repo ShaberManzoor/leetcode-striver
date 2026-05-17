@@ -3,7 +3,7 @@ package binarySearch.OneDArray;
 public class FirstAndLastOccur {
     public static void main(String[] args) {
         int arr[] = {5,7,7,8,8,10};
-        
+
         int firstAndLastOccur[] = new int[2];
         firstAndLastOccur[0] = findFirstOccur(arr, 8);
         firstAndLastOccur[1] = findLastOccur(arr, 8);
@@ -14,7 +14,7 @@ public class FirstAndLastOccur {
     }
     static int findFirstOccur(int arr[], int x){
         int low = 0,  high = arr.length-1, occur = -1;
-        while(low<high){
+        while(low<=high){
             int mid = low + (high - low)/2;
             if(arr[mid]==x){
                 occur = mid;
@@ -30,7 +30,7 @@ public class FirstAndLastOccur {
     }
     static int findLastOccur(int arr[], int x){
         int low = 0,  high = arr.length-1, occur = -1;
-        while(low<high){
+        while(low<=high){
             int mid = low + (high - low)/2;
             if(arr[mid]==x){
                 occur = mid;
