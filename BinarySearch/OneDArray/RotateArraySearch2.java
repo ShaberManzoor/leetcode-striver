@@ -1,4 +1,4 @@
-package binarySearch.OneDArray;
+package BinarySearch.OneDArray;
 
 public class RotateArraySearch2 {
     public static void main(String[] args) {
