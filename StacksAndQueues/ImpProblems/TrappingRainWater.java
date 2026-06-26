@@ -1,4 +1,4 @@
-package StacksAndQueues.VeryImp;
+package StacksAndQueues.ImpProblems;
 
 import java.util.Stack;
 
