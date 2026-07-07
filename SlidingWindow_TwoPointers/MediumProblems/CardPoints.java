@@ -1,7 +1,11 @@
 package SlidingWindow_TwoPointers.MediumProblems;
 
 public class CardPoints {
-    public int maxScore(int cardPoints[], int k){
+    public static void main(String[] args) {
+        int cardPoints[] = {1, 2, 2, 5, 2, 1};
+        System.out.println(maxScore(cardPoints, 3));
+    }
+    public static int maxScore(int cardPoints[], int k){
         int n = cardPoints.length;
         int points = 0;
 
