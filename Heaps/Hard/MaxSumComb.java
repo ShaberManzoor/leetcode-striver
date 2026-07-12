@@ -5,22 +5,26 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.PriorityQueue;
 
-public class MaxSumComb {
+class Node {
+    int i, j, sum;
+    Node(int i, int j, int sum){
+        this.i = i;
+        this.j = j;
+        this.sum = sum;
+    }
+}
 
-    class Node {
-        int i, j, sum;
-        Node(int i, int j, int sum){
-            this.i = i;
-            this.j = j;
-            this.sum = sum;
+public class MaxSumComb {
+    public static void main(String[] args) {
+        int a[] = {3, 2}, b[] = {1, 4};
+        ArrayList<Integer> topKSum = topKSumPairs(a, b, 2);
+
+        for(int sum: topKSum){
+            System.out.println(sum + " ");
         }
     }
 
-    public static void main(String[] args) {
-        int a[] = {}
-    }
-
-    public ArrayList<Integer> topKSumPairs(int[] a, int[] b, int k) {
+    public static ArrayList<Integer> topKSumPairs(int[] a, int[] b, int k) {
         //sort both the arrays
         int n = a.length;
         Arrays.sort(a);
