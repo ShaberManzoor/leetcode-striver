@@ -1,4 +1,4 @@
-package Heaps.Medium;
+package Heaps.Hard;
 
 import java.util.ArrayList;
 import java.util.HashMap;
