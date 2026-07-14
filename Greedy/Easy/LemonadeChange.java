@@ -1,7 +1,12 @@
 package Greedy.Easy;
 
 public class LemonadeChange {
-    public boolean lemonadeChange(int bills[]){
+    public static void main(String[] args) {
+        int bills[] = {5, 5, 10, 10, 20};
+
+        System.out.println(lemonadeChange(bills));
+    }
+    public static boolean lemonadeChange(int bills[]){
         if(bills[0]!=5) return false;
 
         boolean poss = true;
