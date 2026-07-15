@@ -13,7 +13,13 @@ class Meeting {
     }
 }
 public class MeetingInRoom {
-    public ArrayList<Integer> maxMeetings(int[] s, int[] f) {
+    public static void main(String[] args) {
+        int s[] = {1, 3, 0, 5, 8, 5}, f[] = {2, 4, 6, 7, 9, 9};
+        ArrayList<Integer> maxMeetings = maxMeetings(s, f);
+
+        System.out.println(maxMeetings.size());
+    }
+    public static ArrayList<Integer> maxMeetings(int[] s, int[] f) {
         // code here
         Meeting[] meetings = new Meeting[s.length];
 
