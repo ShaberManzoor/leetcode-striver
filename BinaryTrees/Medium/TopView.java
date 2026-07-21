@@ -25,7 +25,7 @@ public class TopView {
         Queue<Pair> q = new ArrayDeque<>();
         TreeMap<Integer, Integer> map = new TreeMap<>();
 
-        q.offer(new Pair(root.val, root));
+        q.offer(new Pair(0, root));
 
         while (!q.isEmpty()) {
             Pair curr = q.poll();
