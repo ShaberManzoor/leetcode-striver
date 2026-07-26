@@ -1,7 +1,5 @@
 package BinarySearch.Answers;
 
-import java.util.Arrays;
-
 public class AllocatedBooks {
     public static void main(String[] args) {
         int a[] = {25, 46, 28, 49, 24};
