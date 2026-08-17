@@ -37,7 +37,7 @@ public class SwimRisingWater {
         }
 
         boolean connected(int u, int v) {
-            return parent[u]==parent[v];
+            return findParent(u)==findParent(v);
         }
     }
 

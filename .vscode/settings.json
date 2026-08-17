@@ -59,7 +59,7 @@
     "editor.selectionHighlight": false,
 
     // ---------- FILE BEHAVIOR ----------
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
 
     // ---------- EXPLORER ----------
     "explorer.confirmDelete": true,
