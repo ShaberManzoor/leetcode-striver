@@ -1,3 +1,67 @@
 {
-    
+    // ==========================================
+    // JAVA MNC / LEETCODE PRACTICE MODE
+    // ==========================================
+
+    // ---------- AUTOCOMPLETE ----------
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "editor.snippetSuggestions": "none",
+    "editor.parameterHints.enabled": false,
+    "editor.wordBasedSuggestions": "off",
+
+    // ---------- INLINE AI SUGGESTIONS ----------
+    "editor.inlineSuggest.enabled": false,
+
+    // GitHub Copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    // ---------- AUTO INSERTION ----------
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never",
+    "editor.autoIndent": "none",
+
+    // ---------- FORMATTING ----------
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+
+    // ---------- QUICK FIXES ----------
+    "editor.lightbulb.enabled": "off",
+    "editor.codeActionsOnSave": {},
+
+    // ---------- JAVA ----------
+    "java.completion.enabled": false,
+    "java.signatureHelp.enabled": false,
+    "java.import.gradle.enabled": false,
+
+    // Disable Java error/warning decorations
+    "java.errors.incompleteClasspath.severity": "ignore",
+
+    // ---------- VISUAL ASSISTANCE ----------
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+
+    // ---------- FILE BEHAVIOR ----------
+    "files.autoSave": "off",
+
+    // ---------- EXPLORER ----------
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": true
 }
