@@ -59,10 +59,29 @@ public class RodCutting {
 
             for(int i=1;i<n;i++) {
                 for(int len=1;len<=n;len++) {
-                    int cut = i<=len ? price[i] + dp[i-1][len-i];
-                    dp[i][len] = 
+                    int cut = i<=len ? price[i] + dp[i-1][len-i] : 0;
+                    int dontCut = dp[i-1][len];
+                    dp[i][len] = Math.max(cut, dontCut);
                 }
             }
+
+            return dp[n-1][n];
+        }
+
+        public int solveOptimised(int[] price) {
+            int n = price.length;
+
+            //max profit of cutting the rod by length i
+            int[] dp = new int[n+1];
+
+            for(int len=1;len<=n;len++) {
+                for(int cut=1;cut<=len;cut++) {
+                    int cutHere = price[cut-1] + dp[len-cut];
+                    dp[len] = Math.max(dp[len], cutHere);
+                }
+            }
+
+            return dp[n];
         }
     }
 }
